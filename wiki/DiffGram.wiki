@@ -1,0 +1,168 @@
+#summary One-sentence summary of this page.
+#labels Phase-Design
+
+= Introduction =
+
+A DiffGram is an XML format that is used to identify current and original versions of data elements.  Microsoft was a specific definition of what a [diffgram] http://msdn.microsoft.com/en-us/library/ms172088(VS.71).aspx means with regards to Datasets.  
+
+I am using the meaning to imply my own specific version of a diffgram as the differences between database schemas as represented via the SST XML format.
+
+= Details =
+
+Here is a small part of a sample of the SST diffgram:
+
+<DataBase_Schema>
+    DiffData
+    <Database>
+        <Name>
+            Compare results for Source DB XML snapshot: llewis-lt_sql2005_Base_SCHEMA.xml,
+            -- with Target DB XML snapshot: llewis-lt_sql2005_LS5_SCHEMA.xml.
+            -- Results are the SQL changes necessary to match
+            -- the Target DB schema to the Source DB schema.
+        </Name>
+        <Date>8/1/2008</Date>
+        <Time>7:27 AM</Time>
+    </Database>
+<TABLE Action = "Alter">
+        <TABLE_NAME>admin_system_message</TABLE_NAME>
+        <TABLE_OWNER>dbo</TABLE_OWNER>
+        <TABLE_FILEGROUP>
+            <TABLE_NAME>admin_system_message</TABLE_NAME>
+            <groupname>PRIMARY</groupname>
+        </TABLE_FILEGROUP>
+        <TABLE_REFERENCE/>
+        <TABLE_CONSTRAINTS/>
+        <TABLE_ORIG_CONSTRAINTS/>
+        <TABLE_ORIG_REFERENCE/>
+        <COLUMN>
+            <Action>Alter</Action>
+            <TABLE_NAME>admin_system_message</TABLE_NAME>
+            <Column_Name>admin_system</Column_Name>
+            <Type>char</Type>
+            <Base_Type>char</Base_Type>
+            <Length>20</Length>
+            <Prec>20</Prec>
+            <Scale>0</Scale>
+            <Seed>0</Seed>
+            <Increment>0</Increment>
+            <isNullable>1</isNullable>
+            <isIdentity>0</isIdentity>
+            <isComputed>0</isComputed>
+            <Default_Orig_Name/>
+            <Default_Name/>
+            <Rule_Name/>
+            <Rule_Owner/>
+            <Rule_Orig_Name/>
+            <Rule_Orig_Owner/>
+            <Default_Owner/>
+            <Default_Value/>
+            <Default_Orig_Value/>
+            <NotforRepl>0</NotforRepl>
+            <isRowGuidCol>0</isRowGuidCol>
+            <ORIG_RowGuidCol>0</ORIG_RowGuidCol>
+            <FullText>0</FullText>
+            <AnsiPad>1</AnsiPad>
+            <Collation>Latin1_General_CI_AI</Collation>
+            <Calc_Text/>
+        </COLUMN>
+        <COLUMN>
+            <Action>Alter</Action>
+            <TABLE_NAME>admin_system_message</TABLE_NAME>
+            <Column_Name>policy_number</Column_Name>
+            <Type>char</Type>
+            <Base_Type>char</Base_Type>
+            <Length>20</Length>
+            <Prec>20</Prec>
+            <Scale>0</Scale>
+            <Seed>0</Seed>
+            <Increment>0</Increment>
+            <isNullable>1</isNullable>
+            <isIdentity>0</isIdentity>
+            <isComputed>0</isComputed>
+            <Default_Orig_Name/>
+            <Default_Name/>
+            <Rule_Name/>
+            <Rule_Owner/>
+            <Rule_Orig_Name/>
+            <Rule_Orig_Owner/>
+            <Default_Owner/>
+            <Default_Value/>
+            <Default_Orig_Value/>
+            <NotforRepl>0</NotforRepl>
+            <isRowGuidCol>0</isRowGuidCol>
+            <ORIG_RowGuidCol>0</ORIG_RowGuidCol>
+            <FullText>0</FullText>
+            <AnsiPad>1</AnsiPad>
+            <Collation>Latin1_General_CI_AI</Collation>
+            <Calc_Text/>
+        </COLUMN>
+        <COLUMN>
+            <Action>Alter</Action>
+            <TABLE_NAME>admin_system_message</TABLE_NAME>
+            <Column_Name>severity</Column_Name>
+            <Type>char</Type>
+            <Base_Type>char</Base_Type>
+            <Length>20</Length>
+            <Prec>20</Prec>
+            <Scale>0</Scale>
+            <Seed>0</Seed>
+            <Increment>0</Increment>
+            <isNullable>1</isNullable>
+            <isIdentity>0</isIdentity>
+            <isComputed>0</isComputed>
+            <Default_Orig_Name/>
+            <Default_Name/>
+            <Rule_Name/>
+            <Rule_Owner/>
+            <Rule_Orig_Name/>
+            <Rule_Orig_Owner/>
+            <Default_Owner/>
+            <Default_Value/>
+            <Default_Orig_Value/>
+            <NotforRepl>0</NotforRepl>
+            <isRowGuidCol>0</isRowGuidCol>
+            <ORIG_RowGuidCol>0</ORIG_RowGuidCol>
+            <FullText>0</FullText>
+            <AnsiPad>1</AnsiPad>
+            <Collation>Latin1_General_CI_AI</Collation>
+            <Calc_Text/>
+        </COLUMN>
+        <COLUMN>
+            <Action>Alter</Action>
+            <TABLE_NAME>admin_system_message</TABLE_NAME>
+            <Column_Name>message_text</Column_Name>
+            <Type>varchar</Type>
+            <Base_Type>varchar</Base_Type>
+            <Length>1000</Length>
+            <Prec>1000</Prec>
+            <Scale>0</Scale>
+            <Seed>0</Seed>
+            <Increment>0</Increment>
+            <isNullable>1</isNullable>
+            <isIdentity>0</isIdentity>
+            <isComputed>0</isComputed>
+            <Default_Orig_Name/>
+            <Default_Name/>
+            <Rule_Name/>
+            <Rule_Owner/>
+            <Rule_Orig_Name/>
+            <Rule_Orig_Owner/>
+            <Default_Owner/>
+            <Default_Value/>
+            <Default_Orig_Value/>
+            <NotforRepl>0</NotforRepl>
+            <isRowGuidCol>0</isRowGuidCol>
+            <ORIG_RowGuidCol>0</ORIG_RowGuidCol>
+            <FullText>0</FullText>
+            <AnsiPad>1</AnsiPad>
+            <Collation>Latin1_General_CI_AI</Collation>
+            <Calc_Text/>
+        </COLUMN>
+        <DropAdd_Indexes Action = "ReAdd">
+            <TABLE_NAME>admin_system_message</TABLE_NAME>
+            <index_name>PK_admin_system_message</index_name>
+            <index_description>clustered, unique, primary key located on PRIMARY</index_description>
+            <index_keys>admin_system_message_id</index_keys>
+        </DropAdd_Indexes>
+    </TABLE>
+</DataBase_Schema>
