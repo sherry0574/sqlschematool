@@ -1,9 +1,9 @@
-#summary One-sentence summary of this page.
+#summary Definition of DiffGram
 #labels Phase-Design
 
 = Introduction =
 
-A DiffGram is an XML format that is used to identify current and original versions of data elements.  Microsoft was a specific definition of what a [diffgram] http://msdn.microsoft.com/en-us/library/ms172088(VS.71).aspx means with regards to Datasets.  
+A DiffGram is an XML format that is used to identify current and original versions of data elements.  Microsoft was a specific definition of what a [DiffGram http://msdn.microsoft.com/en-us/library/ms172088(VS.71).aspx] means with regards to Datasets.  
 
 I am using the meaning to imply my own specific version of a diffgram as the differences between database schemas as represented via the SST XML format.
 
